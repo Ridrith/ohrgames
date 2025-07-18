@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - Ohr Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" />
+    <style>
+      :root {
+        --primary-bg: #0b0b0b;
+        --secondary-bg: #1a1a1a;
+        --accent-bg: #2d2d2d;
+        --primary-text: #f0f0f0;
+        --secondary-text: #a0a0a0;
+        --accent-color: #6366f1;
+        --border-color: #404040;
+        --hover-bg: #333333;
+      }
+      
+      body {
+        font-family: 'UnifrakturCook', serif;
+        background: var(--primary-bg);
+        color: var(--primary-text);
+      }
+      
+      .page-title {
+        background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--accent-bg) 100%);
+        border-bottom: 2px solid var(--accent-color);
+        backdrop-filter: blur(10px);
+      }
+      
+      .content-section {
+        background: var(--secondary-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+      
+      .content-section:hover {
+        background: var(--hover-bg);
+        border-color: var(--accent-color);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+      }
+      
+      .section-header {
+        background: linear-gradient(90deg, var(--accent-color) 0%, rgba(99, 102, 241, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+      .faq-item {
+        background: var(--secondary-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      
+      .faq-item:hover {
+        background: var(--hover-bg);
+        border-color: var(--accent-color);
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(99, 102, 241, 0.1);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-black to-gray-900">
+
+    <!-- Header -->
+    <header class="border-b border-gray-800 py-6 px-4 md:px-12 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-wide text-white">Ohr Games</h1>
+      <nav class="space-x-4 text-gray-300 text-sm">
+        <a href="#" class="hover:text-white transition-colors">Home</a>
+        <a href="#" class="hover:text-white transition-colors">Games</a>
+        <a href="#" class="hover:text-white transition-colors">Support</a>
+        <a href="#" class="hover:text-white transition-colors">About</a>
+      </nav>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title py-16 px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold tracking-wide text-white mb-4">Support</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">Get help with your Ohr Games products and find answers to common questions</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <main class="py-16 px-6 md:px-16">
+      <div class="max-w-4xl mx-auto space-y-8">
+        <section class="content-section p-8">
+          <h3 class="section-header text-3xl font-bold mb-6">Frequently Asked Questions</h3>
+          
+          <div class="space-y-4">
+            <div class="faq-item">
+              <button class="w-full text-left p-6 flex justify-between items-center">
+                <span class="text-xl font-semibold text-white">How do I get started with Torches in the Dark?</span>
+                <span class="text-gray-400">+</span>
+              </button>
+              <div class="px-6 pb-6 text-gray-400">
+                <p>Start by reading the core rulebook, then gather 2-4 players and a Game Master. All you need are some dice and your imagination to begin exploring the dying world.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full text-left p-6 flex justify-between items-center">
+                <span class="text-xl font-semibold text-white">What dice do I need?</span>
+                <span class="text-gray-400">+</span>
+              </button>
+              <div class="px-6 pb-6 text-gray-400">
+                <p>Most of our games use standard polyhedral dice (d4, d6, d8, d10, d12, d20). Specific requirements are listed in each game's rulebook.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="w-full text-left p-6 flex justify-between items-center">
+                <span class="text-xl font-semibold text-white">Can I play online?</span>
+                <span class="text-gray-400">+</span>
+              </button>
+              <div class="px-6 pb-6 text-gray-400">
+                <p>Absolutely! Our games work great with virtual tabletops like Roll20, Foundry VTT, or simple video calls. Digital character sheets are available for download.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-6 md:px-16 bg-gray-950">
+      <div class="max-w-4xl mx-auto">
+        <div class="content-section p-8 text-center">
+          <h3 class="section-header text-3xl font-bold mb-6">Still Need Help?</h3>
+          <p class="text-gray-400 text-lg mb-8">
+            Can't find what you're looking for? Reach out to our support team.
+          </p>
+          <div class="space-y-4">
+            <p class="text-gray-300">
+              <strong>Email:</strong> <a href="mailto:support@ohrgames.com" class="text-indigo-400 hover:text-indigo-300 transition-colors">support@ohrgames.com</a>
+            </p>
+            <p class="text-gray-300">
+              <strong>Response Time:</strong> Usually within 24 hours
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-600">
+      © 2025 Ohr Games. All rights reserved.
+    </footer>
+
+  </body>
+</html>

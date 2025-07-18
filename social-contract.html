@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Contract - Ohr Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" />
+    <style>
+      :root {
+        --primary-bg: #0b0b0b;
+        --secondary-bg: #1a1a1a;
+        --accent-bg: #2d2d2d;
+        --primary-text: #f0f0f0;
+        --secondary-text: #a0a0a0;
+        --accent-color: #6366f1;
+        --border-color: #404040;
+        --hover-bg: #333333;
+      }
+      
+      body {
+        font-family: 'UnifrakturCook', serif;
+        background: var(--primary-bg);
+        color: var(--primary-text);
+      }
+      
+      .page-title {
+        background: linear-gradient(135deg, var(--secondary-bg) 0%, var(--accent-bg) 100%);
+        border-bottom: 2px solid var(--accent-color);
+        backdrop-filter: blur(10px);
+      }
+      
+      .content-section {
+        background: var(--secondary-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+      }
+      
+      .content-section:hover {
+        background: var(--hover-bg);
+        border-color: var(--accent-color);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(99, 102, 241, 0.15);
+      }
+      
+      .section-header {
+        background: linear-gradient(90deg, var(--accent-color) 0%, rgba(99, 102, 241, 0.7) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-black to-gray-900">
+
+    <!-- Header -->
+    <header class="border-b border-gray-800 py-6 px-4 md:px-12 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl font-bold tracking-wide text-white">Ohr Games</h1>
+      <nav class="space-x-4 text-gray-300 text-sm">
+        <a href="#" class="hover:text-white transition-colors">Home</a>
+        <a href="#" class="hover:text-white transition-colors">Games</a>
+        <a href="#" class="hover:text-white transition-colors">Social Contract</a>
+        <a href="#" class="hover:text-white transition-colors">About</a>
+      </nav>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title py-16 px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold tracking-wide text-white mb-4">Social Contract</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg">Creating safe and inclusive gaming spaces for everyone</p>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-16 px-6 md:px-16">
+      <div class="max-w-4xl mx-auto space-y-8">
+        
+        <!-- Introduction -->
+        <section class="content-section p-8">
+          <h3 class="section-header text-3xl font-bold mb-4">Our Commitment</h3>
+          <p class="text-gray-400 text-lg leading-relaxed">
+            At Ohr Games, we believe that tabletop gaming should be a safe, inclusive, and enjoyable experience for everyone. 
+            This social contract outlines our commitment to fostering respectful and welcoming gaming communities.
+          </p>
+        </section>
+
+        <!-- Core Principles -->
+        <section class="content-section p-8">
+          <h3 class="section-header text-3xl font-bold mb-6">Core Principles</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-indigo-500 w-2 h-2 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">Respect</h4>
+                <p class="text-gray-400">All players, regardless of background, identity, or experience level, deserve to be treated with dignity and respect.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-indigo-500 w-2 h-2 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">Inclusion</h4>
+                <p class="text-gray-400">We welcome players of all backgrounds, identities, and skill levels to our tables and communities.</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="bg-indigo-500 w-2 h-2 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+              <div>
+                <h4 class="text-xl font-semibold text-white mb-2">Safety</h4>
+                <p class="text-gray-400">Everyone has the right to feel safe and comfortable while playing our games.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Guidelines -->
+        <section class="content-section p-8">
+          <h3 class="section-header text-3xl font-bold mb-6">Community Guidelines</h3>
+          <div class="space-y-6">
+            <div class="border-l-4 border-indigo-400 pl-6">
+              <h4 class="text-xl font-semibold text-white mb-2">Communication</h4>
+              <p class="text-gray-400">Use inclusive language and avoid discriminatory comments. Be patient with new players and those learning the rules.</p>
+            </div>
+            <div class="border-l-4 border-indigo-400 pl-6">
+              <h4 class="text-xl font-semibold text-white mb-2">Content Warnings</h4>
+              <p class="text-gray-400">Discuss potentially sensitive content before sessions. Use safety tools like X-cards and lines/veils to ensure everyone's comfort.</p>
+            </div>
+            <div class="border-l-4 border-indigo-400 pl-6">
+              <h4 class="text-xl font-semibold text-white mb-2">Conflict Resolution</h4>
+              <p class="text-gray-400">Address conflicts respectfully and directly. When in doubt, prioritize the comfort and safety of all players.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Enforcement -->
+        <section class="content-section p-8">
+          <h3 class="section-header text-3xl font-bold mb-6">Enforcement</h3>
+          <p class="text-gray-400 text-lg leading-relaxed">
+            Violations of this social contract may result in removal from games, communities, or events. 
+            We reserve the right to refuse service to anyone who creates an unsafe or unwelcoming environment for others.
+          </p>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-600">
+      © 2025 Ohr Games. All rights reserved.
+    </footer>
+
+  </body>
+</html>
